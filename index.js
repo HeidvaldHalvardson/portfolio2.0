@@ -36,7 +36,6 @@ function changeSlide(direction) {
     if (activeSlideIndex === slidesCount) {
       activeSlideIndex = 0
     }
-
   }
 
   const width = container.clientWidth
