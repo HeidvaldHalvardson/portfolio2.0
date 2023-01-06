@@ -32,7 +32,7 @@ ul {
   position: absolute;
   left: 0;
   display: flex;
-  background-color: #c9c9c9;
+  background-color: #f0ff6e;
   box-shadow: inset 0 2px 5px #545454;
   height: 30vh;
   transition: transform 0.5s ease-in-out;
@@ -79,6 +79,7 @@ ul {
               0 -1px 5px #505050;
   border-radius: 5px;
   color: #aaaaaa;
+  cursor: pointer;
 }
 
 .controls button:hover {
@@ -91,4 +92,35 @@ ul {
 
 .right-button {
   right: 3vw;
+}
+
+.contacts {
+  position: absolute;
+  bottom: calc(10px + 1 * (100vh / 780));
+  right: 50px;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contacts-item {
+  margin-bottom: 10px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+}
+
+.contacts-link:hover {
+  color: #aaaaaa;
+}
+
+@media (max-height: 550px) {
+  .contacts {
+    display: flex;
+    gap: 10px;
+  }
 }
